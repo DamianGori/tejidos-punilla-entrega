@@ -1,0 +1,76 @@
+/* fondo fotográfico y titulo de cada sección */
+
+@import "valores.scss";
+
+.back {
+    display: grid;
+    grid-template-columns: 85vw;
+    grid-template-rows: 10rem;
+    background-image: url(../imagenes/main-background.jpg);
+    background-size: cover;
+    padding-left: 3vw;
+    padding-top: 6vw;
+    font-size: 3vw; }
+  
+.back-gorros {
+    display: grid;
+    grid-template-columns: 85vw;
+    grid-template-rows: 10rem;
+    background-image: url(../imagenes/Gorros-background.jpg);
+    background-size: cover;
+    padding-left: 3vw;
+    padding-top: 6vw;
+    font-size: 3vw; }
+  
+.back-chalecos {
+    display: grid;
+    grid-template-columns: 85vw;
+    grid-template-rows: 10rem;
+    background-image: url(../imagenes/cuellos-background.jpg);
+    background-size: cover;
+    padding-left: 3vw;
+    padding-top: 6vw;
+    font-size: 3vw; }
+  
+.back-usados {
+    display: grid;
+    grid-template-columns: 85vw;
+    grid-template-rows: 10rem;
+    background-image: url(../imagenes/usados-background.jpg);
+    background-size: cover;
+    padding-left: 3vw;
+    padding-top: 6vw;
+    font-size: 3vw; }
+  
+.back-contacto {
+    display: grid;
+    grid-template-columns: 85vw;
+    grid-template-rows: 10rem;
+    background-image: url(../imagenes/contacto-background.jpg);
+    background-size: cover;
+    padding-left: 3vw;
+    padding-top: 6vw;
+    font-size: 3vw; }
+
+
+.titulo {
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+    font-style: italic;
+    }
+
+@media (max-width: $medium) {
+    
+    .titulo {
+        font-size: 180%;
+    }
+}
+
+@media (max-width: $small) {
+    
+    .titulo {
+        font-size: 300%;
+    }
+}
+    

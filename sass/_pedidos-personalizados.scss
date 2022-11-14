@@ -1,0 +1,84 @@
+/* Formulario de pedidos personalizados de gorros, chalecos y usados */
+@import "valores";
+
+.pedido-personalizado {
+    display: grid;
+    background-color: #ff8b52;
+    color: white;
+    grid-template-columns: 33vw 18vw 33vw;
+    grid-template-rows: 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+        .pedido-personalizado2 {
+            padding: 10%; }
+
+        p {
+            font-size: 100%;
+        }
+}
+
+.formulario-personalizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+
+@media (max-width: $medium) {
+    .pedido-personalizado {
+        grid-template-columns: 100%;
+        grid-template-rows: 25vw 30vw 50vw;
+        padding: 2rem;
+        font-size: 5vw;
+  
+        .pedido-personalizado2 {
+            padding: 2%;
+            text-align: center;
+        
+            h2 {
+                font-size: 75%;
+                text-align: center;
+                }
+    
+            p {
+                font-size: 60%;
+                text-align: center;
+            }
+        }
+    
+        .formulario-personalizado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50%;
+            margin: 5vw;
+            padding: 10vw;
+        }
+    }
+}
+
+@media (max-width: $small) {
+    .pedido-personalizado {
+        grid-template-columns: 100%;
+        grid-template-rows: 25vw 35vw 55vw;
+        padding: 2rem;
+        font-size: 5vw;
+  
+        .pedido-personalizado2 {
+            padding: 2%;
+            text-align: center;
+        
+            h2 {
+                font-size: 75%;
+                text-align: center;
+                }
+    
+            p {
+                font-size: 60%;
+                text-align: center;
+            }
+        }
+    }
+}

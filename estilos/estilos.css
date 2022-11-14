@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/* Sección de datos para el comprador en el Index, debajo del texto de presentación */
+.datos {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20vw 20vw 20vw;
+  margin-top: 5%; }
+  .datos .datos-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%; }
+  .datos .datos-titulo {
+    font-size: 2.7vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw; }
+  .datos .texto {
+    font-size: 2vw;
+    margin-bottom: 5vw; }
+  .datos .icono {
+    width: 8vw;
+    height: 8vw; }
+  .datos .datos-texto {
+    padding: 2rem;
+    margin-left: 1rem;
+    align-items: center;
+    align-content: center; }
+    .datos .datos-texto:hover {
+      background-color: #ff8b52;
+      color: white;
+      transition: 0.5s; }
+
+/* fondo fotográfico y titulo de cada sección */
+.back {
+  display: grid;
+  grid-template-columns: 85vw;
+  grid-template-rows: 10rem;
+  background-image: url(../imagenes/main-background.jpg);
+  background-size: cover;
+  padding-left: 3vw;
+  padding-top: 6vw;
+  font-size: 3vw; }
+
+.back-gorros {
+  display: grid;
+  grid-template-columns: 85vw;
+  grid-template-rows: 10rem;
+  background-image: url(../imagenes/Gorros-background.jpg);
+  background-size: cover;
+  padding-left: 3vw;
+  padding-top: 6vw;
+  font-size: 3vw; }
+
+.back-chalecos {
+  display: grid;
+  grid-template-columns: 85vw;
+  grid-template-rows: 10rem;
+  background-image: url(../imagenes/cuellos-background.jpg);
+  background-size: cover;
+  padding-left: 3vw;
+  padding-top: 6vw;
+  font-size: 3vw; }
+
+.back-usados {
+  display: grid;
+  grid-template-columns: 85vw;
+  grid-template-rows: 10rem;
+  background-image: url(../imagenes/usados-background.jpg);
+  background-size: cover;
+  padding-left: 3vw;
+  padding-top: 6vw;
+  font-size: 3vw; }
+
+.back-contacto {
+  display: grid;
+  grid-template-columns: 85vw;
+  grid-template-rows: 10rem;
+  background-image: url(../imagenes/contacto-background.jpg);
+  background-size: cover;
+  padding-left: 3vw;
+  padding-top: 6vw;
+  font-size: 3vw; }
+
+.titulo {
+  display: flex;
+  align-items: center;
+  font-size: 150%;
+  font-style: italic; }
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 180%; } }
+
+@media (max-width: 320px) {
+  .titulo {
+    font-size: 300%; } }
+
+/* Formulario de contacto de la página Contacto */
+#apellido {
+  display: flex; }
+
+#correo {
+  display: flex; }
+
+#nombre {
+  display: flex; }
+
+#apellido {
+  display: flex; }
+
+.formulario {
+  display: grid;
+  background-color: #ff8b52;
+  color: white;
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-rows: 20rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .formulario .flex {
+    display: flex;
+    padding: 2rem; }
+  .formulario .caja-texto {
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+    align-content: center;
+    font-size: 80%; }
+  .formulario .texto-contacto {
+    align-items: center;
+    align-content: center;
+    padding: 10%; }
+
+@media (max-width: 768px) {
+  .formulario {
+    display: grid;
+    background-color: #ff8b52;
+    color: white;
+    grid-template-columns: 90vw;
+    grid-template-rows: 15rem 20rem 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .formulario .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 90%; }
+    .formulario .caja-texto {
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      font-size: 80%; }
+    .formulario .texto-contacto {
+      text-align: center;
+      justify-content: center;
+      padding: 10%; } }
+
+/* Redes sociales del Footer */
+.redes {
+  width: 3vw;
+  height: 3vw;
+  margin: 1rem; }
+  .redes:hover {
+    width: 4vw;
+    height: 4vw;
+    transition: 1s; }
+
+@media (max-width: 768px) {
+  .redes {
+    width: 7vw;
+    height: 7vw;
+    margin: 1rem; }
+    .redes:hover {
+      width: 10vw;
+      height: 10vw;
+      transition: 1s; } }
+
+@media (max-width: 320px) {
+  .redes {
+    width: 9vw;
+    height: 9vw;
+    margin: 1rem; }
+    .redes:hover {
+      width: 11vw;
+      height: 11vw;
+      transition: 1s; } }
+
+/* IDs para imagenes de gorros, chalecos y usados */
+#carrusel {
+  margin-top: 1%; }
+
+#galeria {
+  margin: 5%; }
+
+/* Formulario de pedidos personalizados de gorros, chalecos y usados */
+.pedido-personalizado {
+  display: grid;
+  background-color: #ff8b52;
+  color: white;
+  grid-template-columns: 33vw 18vw 33vw;
+  grid-template-rows: 20rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .pedido-personalizado .pedido-personalizado2 {
+    padding: 10%; }
+  .pedido-personalizado p {
+    font-size: 100%; }
+
+.formulario-personalizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3vw; }
+
+@media (max-width: 768px) {
+  .pedido-personalizado {
+    grid-template-columns: 100%;
+    grid-template-rows: 25vw 30vw 50vw;
+    padding: 2rem;
+    font-size: 5vw; }
+    .pedido-personalizado .pedido-personalizado2 {
+      padding: 2%;
+      text-align: center; }
+      .pedido-personalizado .pedido-personalizado2 h2 {
+        font-size: 75%;
+        text-align: center; }
+      .pedido-personalizado .pedido-personalizado2 p {
+        font-size: 60%;
+        text-align: center; }
+    .pedido-personalizado .formulario-personalizado {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50%;
+      margin: 5vw;
+      padding: 10vw; } }
+
+@media (max-width: 320px) {
+  .pedido-personalizado {
+    grid-template-columns: 100%;
+    grid-template-rows: 25vw 35vw 55vw;
+    padding: 2rem;
+    font-size: 5vw; }
+    .pedido-personalizado .pedido-personalizado2 {
+      padding: 2%;
+      text-align: center; }
+      .pedido-personalizado .pedido-personalizado2 h2 {
+        font-size: 75%;
+        text-align: center; }
+      .pedido-personalizado .pedido-personalizado2 p {
+        font-size: 60%;
+        text-align: center; } }
+
+/* Texto de presentación del Index */
+.cuerpo {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30% 30%;
+  padding-left: 10%;
+  padding-top: 5%; }
+
+.cuerpo-texto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 95%;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%; }
+  .cuerpo-texto .texto {
+    font-size: 2vw; }
+  .cuerpo-texto:hover {
+    color: #ff8b52;
+    transition: 1s; }
+
+@media (max-width: 768px) {
+  .cuerpo-texto {
+    padding: 1rem;
+    margin-top: 2%;
+    margin-bottom: 1%; } }
+
+/* Algunas propiedades generales */
+.web {
+  margin: 0vw;
+  font-family: 'Roboto', sans-serif; }
+
+#gorros-overflow {
+  overflow-x: hidden; }
+
+#botones-header:hover {
+  background-color: #ff8b52;
+  color: white;
+  transition: 0.5s; }
+
+#carrusel:hover {
+  opacity: 0.7;
+  transition: 0.5s; }

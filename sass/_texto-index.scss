@@ -1,0 +1,36 @@
+/* Texto de presentación del Index */
+@import "valores";
+
+.cuerpo {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    padding-left: 10%;
+    padding-top: 5%; }
+    
+    .cuerpo-texto {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 95%;
+        padding: 3rem;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        
+        .texto {
+            font-size: 2vw;
+        }
+
+            &:hover {
+                color: #ff8b52;
+                transition: 1s;
+            }
+}
+
+@media (max-width: $medium) {
+    .cuerpo-texto {
+        padding: 1rem;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+}
