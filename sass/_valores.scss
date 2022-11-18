@@ -1,2 +1,43 @@
+/* Valores para Media Queries */
 $small: 320px;
 $medium: 768px;
+
+
+/* Valor para el margen de las imagenes */
+$margen-responsive: 2%;
+
+
+/* Opacidad para las imagenes de la galeria */
+$opacity: 1;
+
+
+/* Valor para el margen de la descripción en el Index */
+$margen-texto: 2%;
+
+
+/* Valor para el tamaño de los iconos en el Footer */
+$iconos-ancho: 3vw;
+$iconos-alto: 3vw;
+
+/* Valores para el tamaño del titulo, texto e íconos del Index en la sección de Datos */
+$titulo: (
+    fuente: 2.7vw,
+    margen-superior: 1.5vw,
+    margen-inferior: 1.5vw,
+    justify-content: left,
+);
+
+$texto: (
+    fuente: 2vw,
+    margen-inferior: 5vw,
+);
+
+$icono: (
+    ancho: 8vw,
+    alto: 8vw,
+);
+
+@mixin texto-para-index {
+    font-size: 2vw;
+    margen-inferior: 5vw,
+}

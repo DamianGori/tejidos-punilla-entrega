@@ -2,13 +2,13 @@
 @import "valores";
 
 .redes {
-    width: 3vw;
-    height: 3vw;
+    width: $iconos-ancho;
+    height: $iconos-alto;
     margin: 1rem;
 
         &:hover {
-            width: 4vw;
-            height: 4vw;
+            width: $iconos-ancho * 1.3;
+            height: $iconos-alto * 1.3;
             transition: 1s;
     }
 }

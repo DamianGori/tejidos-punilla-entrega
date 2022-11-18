@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 20vw 20vw 20vw;
-    margin-top: 5%;
+    margin-top: $margen-texto * 2;
 
         .datos-imagen {
             display: flex;
@@ -15,23 +15,26 @@
             padding: 10%; }
 
         .datos-titulo {
-            font-size: 2.7vw;
-            margin-top: 1.5vw;
-            margin-bottom: 1.5vw; }
+            font-size: map-get($titulo, fuente);
+            margin-top: map-get($titulo, margen-superior);
+            margin-bottom: map-get($titulo, margen-inferior);
+            justify-content: left; }
 
         .texto {
-            font-size: 2vw ;
-            margin-bottom: 5vw; }
+            @include texto-para-index; 
+        }
               
         .icono {
-            width: 8vw;
-            height: 8vw; }
+            width: map-get($icono, ancho);
+            height: map-get($icono, alto); 
+        }
 
         .datos-texto {
-            padding: 2rem;
-            margin-left: 1rem;
-            align-items: center;
-            align-content: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-left: 2vw;
                     
                 &:hover {
                     background-color: #ff8b52;

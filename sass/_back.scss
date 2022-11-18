@@ -60,6 +60,11 @@
     font-style: italic;
     }
 
+.titulo--contacto {
+    @extend .titulo;
+    color: white;
+}
+
 @media (max-width: $medium) {
     
     .titulo {

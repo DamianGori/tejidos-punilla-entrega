@@ -1,7 +1,11 @@
-/* IDs para imagenes de gorros, chalecos y usados */
+/* IDs y propiedades para imagenes de gorros, chalecos y usados */
+
+@import "valores";
 
 #carrusel {
-    margin-top: 1%;}
+    margin-top: $margen-responsive / 2;}
   
 #galeria {
     margin: 5%;}
+
+

@@ -1,10 +1,16 @@
 @charset "UTF-8";
 /* Sección de datos para el comprador en el Index, debajo del texto de presentación */
+/* Valores para Media Queries */
+/* Valor para el margen de las imagenes */
+/* Opacidad para las imagenes de la galeria */
+/* Valor para el margen de la descripción en el Index */
+/* Valor para el tamaño de los iconos en el Footer */
+/* Valores para el tamaño del titulo, texto e íconos del Index en la sección de Datos */
 .datos {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: 20vw 20vw 20vw;
-  margin-top: 5%; }
+  margin-top: 4%; }
   .datos .datos-imagen {
     display: flex;
     justify-content: center;
@@ -13,24 +19,32 @@
   .datos .datos-titulo {
     font-size: 2.7vw;
     margin-top: 1.5vw;
-    margin-bottom: 1.5vw; }
+    margin-bottom: 1.5vw;
+    justify-content: left; }
   .datos .texto {
     font-size: 2vw;
-    margin-bottom: 5vw; }
+    margen-inferior: 5vw; }
   .datos .icono {
     width: 8vw;
     height: 8vw; }
   .datos .datos-texto {
-    padding: 2rem;
-    margin-left: 1rem;
-    align-items: center;
-    align-content: center; }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 2vw; }
     .datos .datos-texto:hover {
       background-color: #ff8b52;
       color: white;
       transition: 0.5s; }
 
 /* fondo fotográfico y titulo de cada sección */
+/* Valores para Media Queries */
+/* Valor para el margen de las imagenes */
+/* Opacidad para las imagenes de la galeria */
+/* Valor para el margen de la descripción en el Index */
+/* Valor para el tamaño de los iconos en el Footer */
+/* Valores para el tamaño del titulo, texto e íconos del Index en la sección de Datos */
 .back {
   display: grid;
   grid-template-columns: 85vw;
@@ -81,18 +95,21 @@
   padding-top: 6vw;
   font-size: 3vw; }
 
-.titulo {
+.titulo, .titulo--contacto {
   display: flex;
   align-items: center;
   font-size: 150%;
   font-style: italic; }
 
+.titulo--contacto {
+  color: white; }
+
 @media (max-width: 768px) {
-  .titulo {
+  .titulo, .titulo--contacto {
     font-size: 180%; } }
 
 @media (max-width: 320px) {
-  .titulo {
+  .titulo, .titulo--contacto {
     font-size: 300%; } }
 
 /* Formulario de contacto de la página Contacto */
@@ -155,13 +172,19 @@
       padding: 10%; } }
 
 /* Redes sociales del Footer */
+/* Valores para Media Queries */
+/* Valor para el margen de las imagenes */
+/* Opacidad para las imagenes de la galeria */
+/* Valor para el margen de la descripción en el Index */
+/* Valor para el tamaño de los iconos en el Footer */
+/* Valores para el tamaño del titulo, texto e íconos del Index en la sección de Datos */
 .redes {
   width: 3vw;
   height: 3vw;
   margin: 1rem; }
   .redes:hover {
-    width: 4vw;
-    height: 4vw;
+    width: 3.9vw;
+    height: 3.9vw;
     transition: 1s; }
 
 @media (max-width: 768px) {
@@ -184,7 +207,13 @@
       height: 11vw;
       transition: 1s; } }
 
-/* IDs para imagenes de gorros, chalecos y usados */
+/* IDs y propiedades para imagenes de gorros, chalecos y usados */
+/* Valores para Media Queries */
+/* Valor para el margen de las imagenes */
+/* Opacidad para las imagenes de la galeria */
+/* Valor para el margen de la descripción en el Index */
+/* Valor para el tamaño de los iconos en el Footer */
+/* Valores para el tamaño del titulo, texto e íconos del Index en la sección de Datos */
 #carrusel {
   margin-top: 1%; }
 
@@ -192,6 +221,12 @@
   margin: 5%; }
 
 /* Formulario de pedidos personalizados de gorros, chalecos y usados */
+/* Valores para Media Queries */
+/* Valor para el margen de las imagenes */
+/* Opacidad para las imagenes de la galeria */
+/* Valor para el margen de la descripción en el Index */
+/* Valor para el tamaño de los iconos en el Footer */
+/* Valores para el tamaño del titulo, texto e íconos del Index en la sección de Datos */
 .pedido-personalizado {
   display: grid;
   background-color: #ff8b52;
@@ -251,6 +286,12 @@
         text-align: center; } }
 
 /* Texto de presentación del Index */
+/* Valores para Media Queries */
+/* Valor para el margen de las imagenes */
+/* Opacidad para las imagenes de la galeria */
+/* Valor para el margen de la descripción en el Index */
+/* Valor para el tamaño de los iconos en el Footer */
+/* Valores para el tamaño del titulo, texto e íconos del Index en la sección de Datos */
 .cuerpo {
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -286,11 +327,18 @@
 #gorros-overflow {
   overflow-x: hidden; }
 
+/* Propiedad para los boytones del header */
 #botones-header:hover {
   background-color: #ff8b52;
   color: white;
   transition: 0.5s; }
 
+/* Valores para Media Queries */
+/* Valor para el margen de las imagenes */
+/* Opacidad para las imagenes de la galeria */
+/* Valor para el margen de la descripción en el Index */
+/* Valor para el tamaño de los iconos en el Footer */
+/* Valores para el tamaño del titulo, texto e íconos del Index en la sección de Datos */
 #carrusel:hover {
-  opacity: 0.7;
+  opacity: 0.76923;
   transition: 0.5s; }
